@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical" >
+
+        <!--<android.support.v7.widget.CardView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--cardview:cardCornerRadius="5dp"-->
+        <!--cardview:cardElevation="0dp">-->
+
+        <!--<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--xmlns:local="http://schemas.android.com/apk/res-auto"-->
+        <!--android:id="@+id/toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:minHeight="?attr/actionBarSize"-->
+        <!--android:background="?attr/colorPrimary"-->
+        <!--local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+        <!--local:popupTheme="@style/ThemeOverlay.AppCompat.Light" >-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/search_bar"-->
+        <!--android:hint="@string/search_health_issues_symptoms"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:textSize="16sp"-->
+        <!--android:background="@drawable/bg_search_bar"-->
+        <!--android:drawableStart="@drawable/ic_search_black_24dp"-->
+        <!--android:ems="10"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:fontFamily="@font/roboto"-->
+        <!--android:inputType="text"-->
+        <!--android:textColorHint="@color/default_hint_color"-->
+        <!--android:imeOptions="actionSearch"-->
+        <!--android:imeActionId="989"-->
+        <!--android:maxLines="1"-->
+        <!--/>-->
+
+        <!--</android.support.v7.widget.Toolbar>-->
+
+        <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:local="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/toolbar"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/white"
+            local:theme="@style/AppTheme.ShortActionBar"
+            local:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+
+            <EditText
+                android:id="@+id/search_bar"
+                android:hint="@string/search_health_issues_symptoms"
+                android:layout_width="380dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:textSize="17sp"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/roboto"
+                android:background="@drawable/search_layout"
+                android:drawableStart="@drawable/ic_search_black_24dp"
+                android:ems="10"
+                android:textColor="#999999"
+                android:inputType="text"
+                android:textColorHint="@color/default_hint_color"
+                android:imeOptions="actionSearch"
+                android:imeActionId="989"
+                android:maxLines="1"
+                />
+
+            <!--<ImageButton-->
+                <!--android:id="@+id/search_btn"-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginStart="20dp"-->
+                <!--android:layout_alignBottom="@+id/search_field"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_alignTop="@+id/search_field"-->
+                <!--app:srcCompat="@drawable/search_button_40dp" />-->
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:gravity="center|right">
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_margin="5dp"
+                android:background="@drawable/bg_search_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigation_menu"
+        android:elevation="3dp"
+        android:outlineSpotShadowColor="@color/quantum_grey_600"
+        app:itemIconTint="@drawable/item_selected"
+        app:itemTextColor="@drawable/item_selected"
+        />
+
+</android.support.constraint.ConstraintLayout>

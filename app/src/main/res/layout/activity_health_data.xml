@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HealthDataActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F7F5F5"
+        android:orientation="vertical"
+        tools:context=".HealthDataActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@drawable/blue_plate"
+            android:gravity="center"
+            android:weightSum="100"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="335dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:text="HEALTH DATA"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/healthdata_base_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="0dp"
+                android:weightSum="100"
+                tools:ignore="MissingConstraints">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/bmi_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="125dp"
+                        android:descendantFocusability="blocksDescendants"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/bmi_healthdata" />
+
+                    <View
+                        android:id="@+id/bmi_image_plate"
+                        android:layout_width="match_parent"
+                        android:layout_height="125dp"
+                        android:background="@drawable/shadow" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/heart_rate_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="125dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/heart_rate_checkup_healthdata" />
+
+                    <View
+                        android:id="@+id/heart_rate_image_plate"
+                        android:layout_width="match_parent"
+                        android:layout_height="125dp"
+                        android:background="@drawable/shadow" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="0dp"
+                android:weightSum="100"
+                tools:ignore="MissingConstraints">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/blood_pressure_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="125dp"
+                        android:descendantFocusability="blocksDescendants"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/blood_pressure_healthdata" />
+
+                    <View
+                        android:id="@+id/blood_pressure_image_plate"
+                        android:layout_width="match_parent"
+                        android:layout_height="125dp"
+                        android:background="@drawable/shadow" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/glucose_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="125dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/blood_glucose_healthdata" />
+
+                    <View
+                        android:id="@+id/glucose_image_plate"
+                        android:layout_width="match_parent"
+                        android:layout_height="125dp"
+                        android:background="@drawable/shadow" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:elevation="3dp"
+        android:outlineSpotShadowColor="@color/quantum_grey_600"
+        app:itemIconTint="@drawable/item_selected"
+        app:itemTextColor="@drawable/item_selected"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigation_menu" />
+
+</android.support.constraint.ConstraintLayout>

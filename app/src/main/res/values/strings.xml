@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name" translatable="false">Quare</string>
+    <string name="have_account" translatable="false">Don\'t have an account? </string>
+    <string name="sign_up" translatable="false">Sign Up</string>
+    <string name="login" translatable="false">Log In</string>
+    <string name="logout" translatable="false">Log Out</string>
+    <string name="forgot_password" translatable="false">Forgot Password?</string>
+    <string name="password_hint" translatable="false">Password</string>
+    <string name="email_hint" translatable="false">Email</string>
+    <string name="welcome" translatable="false">Welcome !</string>
+    <string name="sign_in_to_continue" translatable="false">Sign In to Continue</string>
+    <string name="google_login" translatable="false">Google Login</string>
+    <string name="full_name" translatable="false">Full Name</string>
+    <string name="sign_up_now" translatable="false">Sign Up</string>
+    <string name="already_have_an_account" translatable="false">Already have an account?</string>
+    <string name="sign_up_to_unlock_impossibility" translatable="false">Sign Up to unlock the Impossibility</string>
+    <string name="sign_in" translatable="false">Sign In</string>
+    <string name="login_successful" translatable="false">Login Successful</string>
+    <string name="nav_header_title" translatable="false">Android Studio</string>
+    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="search_bar" translatable="false">Search health issues, symptoms...</string>
+    <string name="default_web_client_id" translatable="false">636391045818-dh8jer70magnpq65g18vamsqlu3i5jh2.apps.googleusercontent.com</string>
+    <string name="input_error_name" translatable="false">Name required</string>
+    <string name="input_error_email" translatable="false">Email required</string>
+    <string name="input_error_password" translatable="false">Password required</string>
+    <string name="input_error_phone" translatable="false">Phone required</string>
+    <string name="input_error_password_length" translatable="false">Password should be atleast 6 characters long</string>
+    <string name="input_error_phone_invalid" translatable="false">Enter a valid phone number</string>
+    <string name="registration_success" translatable="false">Registered Successfully</string>
+    <string name="input_error_email_invalid" translatable="false">Enter a valid email</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="searchbar_hint" translatable="false">Search health issues, symptoms..</string>
+    <string name="search_health_issues_symptoms" translatable="false">Search health issues, symptoms..</string>
+
+    <string name="symptoms_head" translatable="false">Symptoms:</string>
+    <string name="medicines_head" translatable="false">Medicines:</string>
+    <string name="precautions_head" translatable="false">Precautions:</string>
+    <string name="blood_group" translatable="false">Blood Group</string>
+    <string name="dob_format" translatable="false">:   DD-MM-YYY</string>
+
+
+    <string name="heart_rate" translatable="false">Heart Rate</string>
+    <string name="beats_per_minute" translatable="false">Beats Per Minute</string>
+    <string name="heart_beat_reate_bpm" translatable="false">Heart beat reate (bpm)</string>
+    <string name="mealtime_prompt" translatable="false">Meal Time</string>
+
+
+    <!--============= SPINNER ARRAY ==============-->
+    <string-array name="blood_groups">
+        <item>Select</item>
+        <item>A(+ve)</item>
+        <item>A(-ve)</item>
+        <item>B(+ve)</item>
+        <item>B(-ve)</item>
+        <item>AB(+ve)</item>
+        <item>AB(-ve)</item>
+        <item>O(+ve)</item>
+        <item>O(-ve)</item>
+    </string-array>
+
+    <string-array name="mealtimes">
+        <item>Select</item>
+        <item>Before Meal</item>
+        <item>After Meal</item>
+    </string-array>
+</resources>

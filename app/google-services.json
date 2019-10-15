@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "636391045818",
+    "firebase_url": "https://quare-55043.firebaseio.com",
+    "project_id": "quare-55043",
+    "storage_bucket": "quare-55043.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636391045818:android:6a5197c11f045e04",
+        "android_client_info": {
+          "package_name": "com.tyitproject.quare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "636391045818-n1m6cvb7tn3ishjfa8ndsr8eu6pe2vea.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tyitproject.quare",
+            "certificate_hash": "208aaa96013d9abcacf534ce123d4c284412cd72"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFqfI8LTu4paLvWlUprtjees5RRgJHPe8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "636391045818-dh8jer70magnpq65g18vamsqlu3i5jh2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

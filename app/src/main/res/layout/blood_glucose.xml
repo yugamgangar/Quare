@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:text="Blood Glucose"
+            android:fontFamily="@font/roboto"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Blood Glucose"
+                android:textColor="@color/material_light_primary_text"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/bloodglucose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColorHint="@color/material_light_hint_text"
+                android:hint="mg/dl" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="3"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Meal Time"
+                android:textColor="@color/material_light_primary_text"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/mealtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:entries="@array/mealtimes"
+                android:prompt="@string/mealtime_prompt"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:padding="5dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="150dp"
+                android:id="@+id/buttonGlucoseEnter"
+                android:layout_height="42dp"
+                android:layout_marginBottom="10dp"
+                android:text="Enter"
+                android:background="@drawable/button_default"/>
+
+            <Button
+                android:layout_marginTop="10dp"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="150dp"
+                android:layout_height="42dp"
+                android:id="@+id/buttonGlucoseGraph"
+                android:text="Show Data"
+                android:background="@drawable/button_default"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

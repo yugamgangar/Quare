@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="2dp"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/about_disease_image"
+        android:scaleType="fitXY"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/image_gradient"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/disease_name"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:elevation="2dp"
+        android:fontFamily="@font/nunito_bold"
+        android:gravity="center_vertical"
+        android:paddingStart="15dp"
+        android:text="Disease name"
+        android:textColor="@color/toast"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:ignore="RtlSymmetry" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:padding="7dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:padding="7dp">
+
+            <TextView
+                android:id="@+id/symptoms_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:elevation="2dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:gravity="center_vertical"
+                android:text="@string/symptoms_head"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/symptoms_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:elevation="2dp"
+                android:fontFamily="@font/nunito"
+                android:gravity="center_vertical"
+                android:paddingStart="8dp"
+                android:text="Symptoms content"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:padding="7dp">
+
+            <TextView
+                android:id="@+id/medicine_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:elevation="2dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:gravity="center_vertical"
+                android:text="@string/medicines_head"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/medicine_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:elevation="2dp"
+                android:fontFamily="@font/nunito"
+                android:gravity="center_vertical"
+                android:paddingStart="8dp"
+                android:text="Medicines content"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:padding="7dp">
+
+            <TextView
+                android:id="@+id/precaution_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:elevation="2dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:gravity="center_vertical"
+                android:text="@string/precautions_head"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/precaution_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:elevation="2dp"
+                android:fontFamily="@font/nunito"
+                android:gravity="center_vertical"
+                android:paddingStart="8dp"
+                android:text="Precaution content"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

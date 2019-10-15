@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/logoBlue_light</item>
+        <item name="colorPrimaryDark">@color/logoBlue</item>
+        <item name="colorAccent">@color/toast</item>
+        <item name="windowActionBar">true</item>
+        <item name="android:actionBarStyle">@style/AppTheme.ShortActionBar</item>
+        <item name="actionBarStyle">@style/AppTheme.ShortActionBar</item>
+    </style>
+
+    <style name="AppTheme.ShortActionBar" parent="Widget.AppCompat.Light.ActionBar">
+        <item name="android:height">@dimen/bar_height</item>
+        <item name="height">@dimen/bar_height</item>
+        <item name="android:titleTextStyle">@style/AppTheme.ShortActionBar.TitleText</item>
+        <item name="titleTextStyle">@style/AppTheme.ShortActionBar.TitleText</item>
+    </style>
+
+    <style name="AppTheme.ShortActionBar.TitleText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">@dimen/bar_text_size</item>
+        <item name="android:textColor">@color/logoOrange</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="full_screen_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:minWidth" type="dimen">600dp</item>
+    </style>
+
+</resources>
